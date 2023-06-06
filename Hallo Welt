@@ -1,8 +1,11 @@
+int lampePin = 13;
 void setup() {
-Serial.begin(9600);
+pinMode(lampePin, OUTPUT);
 }
 
 void loop() {
- Serial.println(" Hello World ");
+ digitalWrite(lampePin, HIGH);  
+delay(1000);
+digitalWrite(lampePin, LOW);
  delay(1000);
 }
